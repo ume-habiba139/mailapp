@@ -111,7 +111,8 @@ class _EmailSenderState extends State<EmailSender> {
                 padding: EdgeInsets.all(8.0),
                 child: TextField(
                   controller: _bodyController,
-
+                  maxLines: null,
+                  expands: true,
                   textAlignVertical: TextAlignVertical.top,
                   decoration: InputDecoration(
                       labelText: 'Body', border: OutlineInputBorder()),
